@@ -27,20 +27,39 @@ Postman/cURL/Browser
 
 -------------------------------
 
+### Code Setup
+
+Open terminal & type code
+
+```
+    git clone https://github.com/Pranavi1308/rewards.git
+    
+    cd rewards
+````
+![image](/images/ProjectSetup.png)
+
+-------------------------------
+
 ### Run Test Cases
 mvn clean
 
 mvn test
+
+![image](/images/AppTestCases.png)
 
 -------------------------------
 
 ### Run Application
 mvn spring-boot:run
 
+![image](/images/AppServerStart.png)
+
 -------------------------------
 
 ### Host
 **HOST**  - http://localhost:8080
+
+![image](/images/AppRunningStatus.png)
 
 -------------------------------
 
@@ -48,6 +67,17 @@ mvn spring-boot:run
 **URL** - {{HOST}}/h2
 
 **Credientials** - admin/admin
+
+![image](/images/H2LoginTestConnection.png)
+
+Customer Table
+
+![image](/images/H2DB-CustomerTable.png)
+
+
+Transaction Table
+
+![image](/images/H2DB-TransactionTable.png)
 
 -------------------------------
 
@@ -132,3 +162,67 @@ Response:
 ``` 
 
 -------------------------------
+
+### Screenshots
+
+## Application --
+
+Project Structure
+
+![image](/images/AppProjectStructure.png)
+
+
+Project Unit Test
+
+![image](/images/AppTestCases.png)
+
+Project Server Start
+
+![image](/images/AppServerStart.png)
+
+-------------------------------
+
+## Rewards ---
+
+All Rewards
+
+![image](/images/AllRewards.png)
+
+
+Rewards by Customer Id
+
+![image](/images/RewardsByCustomerId.png)
+
+
+Rewards Before Adding new Transaction
+
+![image](/images/CustomerRewardPointsBeforeUpdate.png)
+
+Add new transaction
+
+![image](/images/H2DB-TransactionTable.png)
+
+![image](/images/H2DB-TransactionTableInsertRecord.png)
+
+Rewards After Adding new Transaction
+
+![image](/images/CustomerRewardPointsAfterAddingNewTransaction.png)
+
+-------------------------------
+
+## Transactions ---
+
+All Transaction Records
+
+![image](/images/AllTransactions.png)
+
+
+Transaction Records By customer Id
+
+![image](/images/TransactionByCustomerId.png)
+
+-------------------------------
+
+## Bad Request Handling
+
+![image](/images/BadRequest.png)
